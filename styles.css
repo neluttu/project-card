@@ -72,6 +72,7 @@ img {
     padding:3px; 
     background-color: #111447;
     transition: all 0.3s ease;
+    z-index: 0;
 }
 
 img:not(:first-of-type) {
@@ -81,6 +82,7 @@ img:not(:first-of-type) {
 img:hover {
     background-color: #ff0599;
     cursor: pointer;
+    z-index: 4;
 }
 
 .percent {
