@@ -8,8 +8,79 @@ body, html {
     font-family: 'Open Sans', sans-serif;
     font-size: 26px;
     font-weight: 300;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 }
 
 * {
     box-sizing: border-box;
+}
+
+#container {
+    background-color: #20255b; 
+    max-width: 780px; 
+    min-height: 300px; 
+    margin:auto; 
+    border-radius: 25px; 
+    -webkit-box-shadow: 0px 17px 37px 19px rgba(15,18,58,0.6);
+    box-shadow: 0px 17px 37px 19px rgba(15,18,58,0.6); 
+    overflow: hidden; 
+    position: relative;
+}
+
+.bar {
+    width:100%; 
+    height: 5px; 
+    background-color: #ff0599;
+}
+
+svg.elipsis {
+    position: absolute; 
+    margin-top:30px; 
+    margin-right:0px; 
+    right: 40px; 
+    padding:6px 7px 0px;
+}
+
+.progress-bar {
+    width: 70%;
+    height: 13px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    background-color: #111447;
+    display: inline-block;
+    border-radius: 25px;
+}
+
+.progress-bar span {
+    height: 100%;
+    display: block;
+    width: 0;
+    color: rgb(255, 251, 251);
+    line-height: 20px;
+    position: absolute;
+    text-align: end;
+    padding-right: 5px;
+    font-size: 13px;
+    background-color: #5dd6e7;
+    border-radius: 25px;
+}
+
+#container img {
+    border-radius:50%; 
+    border:3px solid #111447; 
+    padding:3px; 
+    background-color: #ff0599;
+}
+
+#container img:not(:first-child) {
+    margin-left:-30px; 
+}
+
+.percent {
+    font-size:30px;
+    font-weight: 500;
+    margin-left: 10px;
 }
