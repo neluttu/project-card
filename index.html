@@ -13,33 +13,28 @@
 </head>
 <body>
     <div id="container">
-        <div class="bar"></div>
-            <svg xmlns="http://www.w3.org/2000/svg" class="elipsis" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <circle cx="5" cy="12" r="1" />
-                <circle cx="12" cy="12" r="1" />
-                <circle cx="19" cy="12" r="1" />
-              </svg>
-        <div style="padding:30px">
-            <h2 style="font-size:32px; margin-top: 0px; margin-bottom: 6px;">Taciti eros morbi sapien sit nec ac</h2>
-            <span style="font-size:20px;">Created on 11.06.1983</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="elipsis" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="5" cy="12" r="1" />
+            <circle cx="12" cy="12" r="1" />
+            <circle cx="19" cy="12" r="1" />
+        </svg>
+        <div class="content">
+            <h2>iCodeThis.com Project Card challenge</h2>
+            <span class="date">Created on 20.02.2023</span>
             <br>
             <br>
-            Vitae nisl velit donec egestas mi, dolor cras dolor nec sodales quis at, lacinia non egastas lectus praeset quam at, magnis oosuere libero. 
+            Coding this for fun and to improve skills. Join iCodethis.com challenges to improve yours. Fully functional project card with HTML / CSS and JavaScript (jQuery included).
             <br>
             <br>
-            <span style="font-weight: 400; font-size:30px;">Tasks</span> &nbsp; 
+            <span class="progress-tasks">Tasks</span> &nbsp; 
             <div class="progress-bar">
-                <span data-progress="40"></span>  
+                <span data-progress="96"></span>  
             </div>
             <span class="percent"></span>
             <script>
-                $(document).ready(function() {
-                    $(".progress-bar span").each(function () {
-                        $(this).animate({width: $(this).attr("data-progress") + "%",},700);
-                        $(".percent").text($(this).attr("data-progress") + "%");
-                    });                
-                });
+                $(".progress-bar span").animate({width: $(".progress-bar span").attr("data-progress") + "%",},700);
+                $(".percent").text($(".progress-bar span").attr("data-progress") + "%");
             </script>
             <br>
             <br>
